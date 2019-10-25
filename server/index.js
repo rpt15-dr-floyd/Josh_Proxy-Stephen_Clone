@@ -13,7 +13,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // write code to handle getting data
-let overview = 'http://ec2-18-144-35-234.us-west-1.compute.amazonaws.com';
+// let overview = 'http://ec2-18-144-35-234.us-west-1.compute.amazonaws.com';
+// let reviews = 'http://ec2-54-183-55-106.us-west-1.compute.amazonaws.com';
+// let image = 'http://ec2-13-57-33-155.us-west-1.compute.amazonaws.com';
+// let aboutGame = 'http://my-env.wf8cymc59m.us-west-1.elasticbeanstalk.com';
+let overview = 'http://ec2-13-57-13-174.us-west-1.compute.amazonaws.com';
 let reviews = 'http://ec2-54-183-55-106.us-west-1.compute.amazonaws.com';
 let image = 'http://ec2-13-57-33-155.us-west-1.compute.amazonaws.com';
 let aboutGame = 'http://my-env.wf8cymc59m.us-west-1.elasticbeanstalk.com';
