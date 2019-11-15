@@ -1,82 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Steam App</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="steamNavBG"></div>
-      <div id="steamNav">
-        <img
-          width="100%"
-          src="https://drive.google.com/uc?export=view&id=1fg_ij7oAYc4stOnmqiA-weAayUIxwiV9"
-        />
-      </div>
-      <div id="topNav">
-        <img
-          width="100%"
-          src="https://drive.google.com/uc?export=view&id=1rhRrj5lX9eov1cyNxT7fHG4TBdriIKoo"
-        />
-      </div>
-      <div id="photogallery"></div>
-      <div id="overview"></div>
-      <div id="rightSideBar">
-        <img
-          width="100%"
-          src="https://drive.google.com/uc?export=view&id=1RULD74e-Fd1fAc0xuIPkZ483jfxUodhS"
-        />
-        <img
-          width="100%"
-          src="https://drive.google.com/uc?export=view&id=1Du3SRR3OliuPWOsItW8KyEZzkgWGFoPW"
-        />
-      </div>
-      <div id="purchaseGame">
-        <img
-          width="100%"
-          src="https://drive.google.com/uc?export=view&id=1gkPoWAvfgpW4YFpELBsZIKDs7m72TXRs"
-        />
-      </div>
-      <div id="topReviews"></div>
-      <div id="aboutGame"></div>
-      <div id="systemRequirements">
-        <img
-          width="100%"
-          src="https://drive.google.com/uc?export=view&id=1JsGJX5BZjBmD0_7bLNvkGIlIkuSrIj5F"
-        />
-      </div>
-      <div id="reviews"></div>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Steam App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="steamNavBG"></div>
+    <div id="steamNav">
+      <img width="100%" src="https://drive.google.com/uc?export=view&id=1fg_ij7oAYc4stOnmqiA-weAayUIxwiV9" />
     </div>
-    <!-- Justin's microservice -->
-    <!-- <script type="text/javascript" src="/api/aboutGame"></script> -->
-    <script
-      type="text/javascript"
-      src="http://ec2-18-218-54-252.us-east-2.compute.amazonaws.com:8081/1/bundle.js"
-    ></script>
+    <div id="topNav">
+      <img width="100%" src="https://drive.google.com/uc?export=view&id=1rhRrj5lX9eov1cyNxT7fHG4TBdriIKoo" />
+    </div>
+    <div id="photogallery"></div>
+    <div id="overview"></div>
+    <div id="rightSideBar">
+      <img width="100%" src="https://drive.google.com/uc?export=view&id=1RULD74e-Fd1fAc0xuIPkZ483jfxUodhS" />
+      <img width="100%" src="https://drive.google.com/uc?export=view&id=1Du3SRR3OliuPWOsItW8KyEZzkgWGFoPW" />
+    </div>
+    <div id="purchaseGame">
+      <img width="100%" src="https://drive.google.com/uc?export=view&id=1gkPoWAvfgpW4YFpELBsZIKDs7m72TXRs" />
+    </div>
+    <div id="topReviews"></div>
+    <div id="aboutGame"></div>
+    <div id="systemRequirements">
+      <img width="100%" src="https://drive.google.com/uc?export=view&id=1JsGJX5BZjBmD0_7bLNvkGIlIkuSrIj5F" />
+    </div>
+    <div id="reviews"></div>
+  </div>
+  <!-- Justin's microservice -->
+  <!-- <script type="text/javascript" src="/api/aboutGame"></script> -->
+  <script type="text/javascript"
+    src="http://ec2-18-218-54-252.us-east-2.compute.amazonaws.com:8081/1/bundle.js"></script>
 
-    <!-- Zack's Reviews Need EC2 Instance-->
-    <!-- <script type="text/javascript" src="/api/reviews"></script> -->
-    <script
-      type="text/javascript"
-      src="http://ec2-52-53-170-110.us-west-1.compute.amazonaws.com:3001/1/dist/bundle.js"
-    ></script>
+  <!-- Zack's Reviews Need EC2 Instance-->
+  <!-- <script type="text/javascript" src="/api/reviews"></script> -->
+  <!-- Zack's service is turned off right now -->
+  <!-- <script type="text/javascript"
+    src="http://ec2-52-53-170-110.us-west-1.compute.amazonaws.com:3001/1/dist/bundle.js"></script> -->
 
-    <!-- Josh's Overview Need EC2 Instance -->
-    <!-- <script type="text/javascript" src="/api/overview"></script> -->
-    <script
-      type="text/javascript"
-      src="http://ec2-54-153-99-135.us-west-1.compute.amazonaws.com/1/dist/bundle.js"
-    ></script>
+  <!-- Josh's Overview Need EC2 Instance -->
+  <!-- LOCAL -->
+  <!-- <script type="text/javascript" src="/api/overview"></script> -->
+  <!-- ORIGINAL EC2 -->
+  <!-- <script type="text/javascript" src="http://ec2-54-153-99-135.us-west-1.compute.amazonaws.com/1/dist/bundle.js"></script> -->
+  <!-- LOAD BALANCER -->
+      <script type="text/javascript" src="http://localhost:4000"></script>
 
-    <!-- Bryan's microservice-->
+  <!-- Bryan's microservice-->
 
-    <-- http://ec2-52-53-185-254.us-west-1.compute.amazonaws.com/1/bundle.js -->
-    <script
-      type="text/javascript"
-      src="http://ec2-52-53-185-254.us-west-1.compute.amazonaws.com/1/bundle.js"
-    ></script>
+  <!-- http://ec2-52-53-185-254.us-west-1.compute.amazonaws.com/1/bundle.js -->
+    <script type="text/javascript" src="http://ec2-52-53-185-254.us-west-1.compute.amazonaws.com/1/bundle.js"></script>
     <!-- <script type="text/javascript" src="/api/image"></script> -->
 
-  </body>
+</body>
+
 </html>
+

@@ -7,6 +7,13 @@ const cors = require('cors');
 
 const app = express();
 
+
+
+
+
+
+
+
 //app.use('/', express.static('public'));
 //For Loader io below
 app.use('/', express.static(__dirname + '/../')); //loader.io
@@ -16,13 +23,6 @@ app.use(compression());
 app.use(bodyParser.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
-
-// write code to handle getting data
-// let overview = 'localhost:3000';
-// let image = 'http://ec2-52-53-185-254.us-west-1.compute.amazonaws.com/';
-// let reviews = 'http://ec2-54-183-55-106.us-west-1.compute.amazonaws.com';
-// let aboutGame = 'http://my-env.wf8cymc59m.us-west-1.elasticbeanstalk.com';
-// let aboutGame = 'http://ec2-18-218-54-252.us-east-2.compute.amazonaws.com:8081';
 
 
 app.use('/api/:service', (req, res) => {
